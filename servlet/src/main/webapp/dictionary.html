@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Словарь</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body bgcolor="#aaccff">
+<Font color="green" size="10">
+    Форма для работы со словарем
+</Font>
+<br><br>
+
+<!-- Форма для перевода с русского -->
+<form method="Get" action="HelloServlet">
+    <Font color="blue" size="6">Введите русское слово:</Font>
+    <Input type="Text" name="russianWord" value=""/>
+    <br><br>
+    <Input type="submit" value="Перевести на английский"/>
+</form>
+
+<br><br>
+
+<!-- Форма для обратного перевода (с английского) -->
+<form method="Get" action="HelloServlet">
+    <Font color="blue" size="6">Введите английское слово:</Font>
+    <Input type="Text" name="englishWord" value=""/>
+    <br><br>
+    <Input type="submit" value="Перевести на русский"/>
+</form>
+
+<br><br>
+<hr>
+
+<!-- Новая кнопка для генерации Word документа -->
+<form method="Get" action="WordServlet">
+    <Font color="red" size="6">Скачать отчет в Word:</Font>
+    <br><br>
+    <Input type="submit" value="Сгенерировать Word документ"/>
+</form>
+
+</body>
+</html>
